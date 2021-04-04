@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: radial-gradient(purple, pink, blue);
+
+        }
+
+        @-moz-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* IE */
+        @-ms-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Opera and prob css3 final iteration */
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .blink-image {
+            -moz-animation: blink normal 20s infinite ease-in-out;
+            /* Firefox */
+            -webkit-animation: blink normal 20s infinite ease-in-out;
+            /* Webkit */
+            -ms-animation: blink normal 20s infinite ease-in-out;
+            /* IE */
+            animation: blink normal 20s infinite ease-in-out;
+            /* Opera and prob css3 final iteration */
+        }
+
+        .bezos {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 500px;
+            width: 1000px;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        @-webkit-keyframes rotating
+
+        /* Safari and Chrome */
+            {
+            from {
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotating {
+            from {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotating {
+            -webkit-animation: rotating 5s linear infinite;
+            -moz-animation: rotating 5s linear infinite;
+            -ms-animation: rotating 5s linear infinite;
+            -o-animation: rotating 5s linear infinite;
+            animation: rotating 5s linear infinite;
+        }
+
+        .pepega {
+            transform: rotate(50deg);
+            position: absolute;
+            top: 70%;
+            left: 30%;
+        }
+
+        .pepega2 {
+            transform: rotate(-50deg);
+            position: absolute;
+            top: 70%;
+            left: 40%;
+        }
+
+        .pepega3 {
+            transform: rotate(50deg);
+            position: absolute;
+            top: 70%;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <marquee scrollamount="15">
+            <h1>TRABALHO MUITO BOM e incrível</h1><span
+                style="font-size: 30px; font-style: italic; background: -webkit-linear-gradient(#eee, #333);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">por
+                @neslonNecro</span>
+        </marquee>
+        <marquee scrollamount="10">
+            <h2>Hoje eu vou falar sobre uma pessoa muito incrível:</h2>
+        </marquee>
+        <marquee scrollamount="7">
+            <h2>o nome dele é</h2>
+        </marquee>
+        <marquee scrollamount="25">
+            <h3><span style="color: red">XUCZINHO </span><span style="color: pink">igor</span><span
+                    style="color: green"> ↓ ↓ xuc </span> ↓ ↓ mt bala esse cara ↓ ↓ </h3>
+        </marquee>
+        <div style="margin-left: 500px">
+            <img class="rotating" src="https://i.imgur.com/hWzdGSf.png" alt="">
+            <img class="rotating" src="https://i.imgur.com/hWzdGSf.png" alt="">
+
+            <img class="rotating" src="https://i.imgur.com/hWzdGSf.png" alt="">
+        </div>
+        <div>
+            <h1 class="pepega">INSCREVA-SE</h1>
+        </div>
+        <div>
+            <h1 class="pepega2">XUC PRIME</h1>
+        </div>
+        <div>
+            <h1 class="pepega3">INSCREVA-SE</h1>
+        </div>
+
+        <img class="bezos blink-image" src="https://i.imgur.com/1NESNzz.jpg" alt="">
+
+    </div>
+</body>
+
+</html>
